@@ -7,7 +7,7 @@ const Attandance = () => {
     const { teachers } = useContext(AvailabilityContext);
     return (
         <div className={styles.attandanceContainer}>
-            <h4 className={styles.heading}>Attandance</h4>
+            <h4 className={styles.heading}>Attendance</h4>
             <div className={styles.attandance}>
                 {teachers.map(teacher => (
                     <TeacherListItem key={teacher.id} teacher={teacher} />
