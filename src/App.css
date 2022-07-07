@@ -5,4 +5,17 @@
   background-color:#FDCCCD;
   height: 100vh;
   width: 100vw;
+  background-image: url('./assets/img/bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  background-position: center;
+}
+
+@media screen and (max-width: 940px) {
+  .App {
+    flex-direction: column;
+    height: auto;
+    padding-top: 5%;
+  }
 }

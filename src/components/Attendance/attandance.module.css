@@ -1,22 +1,29 @@
 .attandance {
-    background-color: #fff;
-    width: 60%;
-    border-radius: 1rem;
-    margin: 0 0 10% 0;
-    box-shadow: 0 -7px 10px -6px rgba(0,0,0,0.2);
-    height: 500px;
+  background-color: #fff;
+  width: 60%;
+  border-radius: 1rem;
+  margin: 0 0 10% 0;
+  box-shadow: 0 -7px 10px -6px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  overflow: hidden;
+  min-width: 330px;
 }
 .attandanceContainer {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
 }
 .heading {
-    background-color: #fff;
-    margin: 10% 0 0;
-    padding: 1.2rem;
-    width: 40%;
-    border-radius: 1rem 1rem 0 0; 
+  background-color: #fff;
+  margin: 10% 0 0;
+  padding: 1.2rem;
+  width: 40%;
+  border-radius: 1rem 1rem 0 0;
+}
 
+@media screen and (max-width: 600px) {
+  .heading {
+    width: 90%;
+  }
 }
