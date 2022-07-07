@@ -5,6 +5,6 @@ import Attandance from './Attendance';
 describe('Attandance Component', () => {
     it('should render the component onto the screen', () => {
         render(<Attandance />);
-        expect(screen.getByText("Attandance")).toBeInTheDocument();
+        expect(screen.getByText("Attendance")).toBeInTheDocument();
     });
 })
