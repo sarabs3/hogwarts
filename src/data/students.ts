@@ -41,18 +41,18 @@ export const students: Student[] = [
         name: 'Padma Patil',
         id: 5,
         subject: {
-            id: 1,
-            name: 'Potions Master'
+            id: 2,
+            name: 'Defense Against the Dark Arts'
         },
-        teacherId: 5,
+        teacherId: null,
     },
     {
         name: 'Luna Lovegood',
         id: 6,
         subject: {
-            id: 1,
-            name: 'Potions Master'
+            id: 2,
+            name: 'Defense Against the Dark Arts'
         },
-        teacherId: 5,
+        teacherId: 8,
     },
 ];

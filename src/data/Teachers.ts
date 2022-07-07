@@ -39,21 +39,21 @@ export const teachersData: Teacher[] = [
     {
         name: 'Alastor Moody',
         id: 6,
-        subjectId: 1,
+        subjectId: 2,
         superTeacherId: 2,
         available: false,
     },
     {
         name: 'Remus Lupin',
         id: 7,
-        subjectId: 1,
+        subjectId: 2,
         superTeacherId: 6,
         available: false,
     },
     {
         name: 'Gilderoy Lockhart',
         id: 8,
-        subjectId: 1,
+        subjectId: 2,
         superTeacherId: 7,
         available: false,
     }
