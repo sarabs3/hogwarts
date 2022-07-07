@@ -13,7 +13,7 @@ const StudentListItem: React.FC<Props> = ({ student }) => {
 
     const teacher = getTeacher(teachers, student.teacherId, student.subject.id);
     return (
-        <tr className={styles.row}>
+        <tr data-testid={`student${student.id}`} className={styles.row}>
             <td className={styles.item}>{student.name}</td>
             <td className={styles.item}>{student.subject.name}</td>
             <td className={styles.item}>{teacher ? teacher.name : 'Not Assigned'}</td>
