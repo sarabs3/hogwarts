@@ -7,7 +7,7 @@ const useTeacher = (): {teachers: Teacher[], updateTeacher: (id: number, availab
 
     const updateTeacher = (id: number, available: boolean) => {
         const selectedTeacher = teachers.findIndex(t => t.id === id);
-        if (selectedTeacher > 0) {
+        if (selectedTeacher >= 0) {
             teachers[selectedTeacher].available = available;
             setTeachers([...teachers]);
         }
