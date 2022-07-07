@@ -1,5 +1,5 @@
 import { teachersData } from "./data/Teachers";
-import { findTeacher, getStandByTeacherForSubject } from "./utils";
+import { findTeacher, getStandByTeacherForSubject, getTeacher } from "./utils";
 
 describe('Find Teacher', () => {
     it('should find and return the teacher', () => {
@@ -28,4 +28,27 @@ describe('get stand by teacher for subject', () => {
         const teacher = getStandByTeacherForSubject(3);
         expect(teacher).toBe(null);
     })
+});
+
+describe('Get Teacher for students', () => {
+    it('should return Professor Dumbledore for the given subject', () => {
+        const teacher = getTeacher(teachersData, 1, 1);
+        expect(teacher).toBe(teachersData[0]);
+    });
+    it('should return Rubeus Hagrid for the given subject', () => {
+        const teacher = getTeacher(teachersData, null, 1);
+        expect(teacher).toBe(teachersData[2]);
+    });
+    it('should return Horace Slughorn for the given subject', () => {
+        const teacher = getTeacher(teachersData, 5, 1);
+        expect(teacher).toBe(teachersData[3]);
+    });
+    it('should return Horace Slughorn for the subject', () => {
+        const teacher = getTeacher(teachersData, 4, 1);
+        expect(teacher).toBe(teachersData[3]);
+    });
+    it('should return null if selected teacher is not in the list', () => {
+        const teacher = getTeacher(teachersData, 30, 1);
+        expect(teacher).toBe(null);
+    });
 })

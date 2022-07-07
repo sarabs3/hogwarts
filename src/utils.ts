@@ -13,3 +13,18 @@ export const getStandByTeacherForSubject = (subjectId: number) => {
     if (!subject) return null;
     return subject.standByTeacherId;
 };
+
+
+export const getTeacher = (teachers: Teacher[], id: number | null, subjectId: number): Teacher | null => {
+    let teacherId = id;
+    if (!teacherId) {
+        teacherId = getStandByTeacherForSubject(subjectId);
+    };
+    let teacher = null;
+    teacher = findTeacher(teachers, teacherId);
+    if (!teacher) return null;
+    if (!teacher.available) {
+        return getTeacher(teachers, teacher?.superTeacherId, subjectId);
+    }
+    return teacher;
+};
