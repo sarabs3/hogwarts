@@ -10,6 +10,12 @@ https://monumental-malasada-6da7b3.netlify.app/
 <img width="1758" alt="image" src="https://user-images.githubusercontent.com/3119576/177781846-b9c754d2-d80b-4558-8c5a-a7765cd79c8d.png">
 
 
+### Tech Stack
+- Typescript
+- ReactJs
+- Cucumber.js
+- CupressJs
+- CSS Modules
 
 ### Local Setup
 
