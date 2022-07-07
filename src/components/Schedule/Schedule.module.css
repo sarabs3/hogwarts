@@ -1,0 +1,36 @@
+.scheduleContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.schedule {
+    background-color: #fff;
+    width: calc(60% - 2rem);
+    border-radius: 1rem;
+    margin: 0 0 10% 0;
+    box-shadow: 0 -7px 10px -6px rgba(0,0,0,0.2);
+    height: calc(500px - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.heading {
+    background-color: #fff;
+    margin: 10% 0 0;
+    padding: 1.2rem;
+    width: 40%;
+    border-radius: 1rem 1rem 0 0; 
+}
+.table {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.tableHeading {
+    font-size: 0.8rem;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+}
