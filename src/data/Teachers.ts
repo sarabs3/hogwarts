@@ -20,7 +20,7 @@ export const teachersData: Teacher[] = [
         id: 3,
         subjectId: 1,
         superTeacherId: 2,
-        available: false,
+        available: true,
     },
     {
         name: 'Horace Slughorn',
