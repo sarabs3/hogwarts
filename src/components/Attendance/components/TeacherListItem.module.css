@@ -1,0 +1,19 @@
+.attandance {
+    border-bottom: 1px solid #ddd;
+    padding: 0.84rem 2rem;
+}
+.listItem {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.availability {
+    border: none;
+}
+.dropdown {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background-color: transparent;
+    border-color: teal;
+}
