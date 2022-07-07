@@ -1,5 +1,5 @@
 import { teachersData } from "./data/Teachers";
-import { findTeacher, getStandByTeacherForSubject, getTeacher } from "./utils";
+import { findTeacher, getStandByTeacherForSubject, getTeacher, getTeacherId } from "./utils";
 
 describe('Find Teacher', () => {
     it('should find and return the teacher', () => {
@@ -51,4 +51,20 @@ describe('Get Teacher for students', () => {
         const teacher = getTeacher(teachersData, 30, 1);
         expect(teacher).toBe(null);
     });
-})
+    it('should return null if there is no super teacher', () => {
+        const teachers = [...teachersData];
+        teachers[0].available = false;
+        const teacher = getTeacher(teachers, 1, 1);
+        expect(teacher).toBe(null);
+    });
+});
+describe('getTeacherId', () => {
+    it('Should return selectedId', () => {
+        const teacherId = getTeacherId(2, 2);
+        expect(teacherId).toBe(2);
+    });
+    it('Should return subject standby teacher Id', () => {
+        const teacherId = getTeacherId(null, 2);
+        expect(teacherId).toBe(6);
+    })
+});

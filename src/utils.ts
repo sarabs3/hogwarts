@@ -14,17 +14,16 @@ export const getStandByTeacherForSubject = (subjectId: number) => {
     return subject.standByTeacherId;
 };
 
+export const getTeacherId = (id: number | null, subjectId: number) => {
+    if (id) return id;
+    return getStandByTeacherForSubject(subjectId);;
+}
 
 export const getTeacher = (teachers: Teacher[], id: number | null, subjectId: number): Teacher | null => {
-    let teacherId = id;
-    if (!teacherId) {
-        teacherId = getStandByTeacherForSubject(subjectId);
-    };
-    let teacher = null;
-    teacher = findTeacher(teachers, teacherId);
+    const teacherId = getTeacherId(id, subjectId);
+    const teacher = findTeacher(teachers, teacherId);
     if (!teacher) return null;
-    if (!teacher.available) {
-        return getTeacher(teachers, teacher?.superTeacherId, subjectId);
-    }
-    return teacher;
+    if (teacher.available) return teacher;
+    if (!teacher.superTeacherId) return null;
+    return getTeacher(teachers, teacher.superTeacherId, subjectId);
 };
