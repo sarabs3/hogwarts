@@ -1,12 +1,15 @@
 # Hogwarts Schedule
 
-
-
 ### Hosted URL 
 
 Application is deployed here to quickly review the output.
 
 https://monumental-malasada-6da7b3.netlify.app/
+
+
+<img width="1758" alt="image" src="https://user-images.githubusercontent.com/3119576/177781846-b9c754d2-d80b-4558-8c5a-a7765cd79c8d.png">
+
+
 
 ### Local Setup
 
@@ -28,6 +31,7 @@ https://monumental-malasada-6da7b3.netlify.app/
 - [x] E2E testing using CypressJs
 - [x] Using Context API
 - [x] Custom CSS
+- [x] Handling both subject allocation (Potions Master and Defense Against the Dark Arts)
 
 ## Context 
 
@@ -40,6 +44,9 @@ I have use Context API to make the data available to all components and to avoid
 `npm test:cucumber` for running BDD tests
 
 `npm run test:e2e` for E2E tests
+
+<img width="1266" alt="cypress" src="https://user-images.githubusercontent.com/3119576/177781749-bf521092-9c23-4de0-9a78-509f77e491d2.png">
+
 
 
 
