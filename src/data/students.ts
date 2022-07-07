@@ -8,7 +8,7 @@ export const students: Student[] = [
             id: 1,
             name: 'Potions Master'
         },
-        teacherId: null,
+        teacherId: 4,
     },
     {
         name: 'Hermione Granger',
@@ -26,7 +26,7 @@ export const students: Student[] = [
             id: 1,
             name: 'Potions Master'
         },
-        teacherId: null,
+        teacherId: 5,
     },
     {
         name: 'Draco Malfoy',
@@ -35,7 +35,7 @@ export const students: Student[] = [
             id: 1,
             name: 'Potions Master'
         },
-        teacherId: 5,
+        teacherId: 4,
     },
     {
         name: 'Padma Patil',
