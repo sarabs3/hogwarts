@@ -14,7 +14,7 @@ https://monumental-malasada-6da7b3.netlify.app/
 - Typescript
 - ReactJs
 - Cucumber.js
-- CupressJs
+- CypressJs
 - CSS Modules
 
 ### Local Setup
